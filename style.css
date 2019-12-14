@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  min-height: 575px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #7b4397;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Montserrat', sans-serif;
+}
+#title{
+  width: 100%;
+    text-align: center;
+}
+h1{
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgba(253,108,110,0.5);
+  border-radius:5px;
+}
+
+#wheel-wrap {
+  width: 458px;
+  height: 458px;
+  margin: 0 auto 20px ;
+  position: relative;
+}
+
+#wheel {
+  width: 458px;
+  height: 458px;
+  background: url(wheel.png);
+  -webkit-transition: 2.5s ease;
+  -moz-transition: 2.5s ease;
+  -o-transition: 2.5s ease;
+  transition: 2.5s ease;
+}
+
+#pin {
+  width: 150px;
+  height: 150px;
+  background: url(pin.png);
+  margin: auto;
+  position: absolute;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  cursor: pointer;
+}
+
+#modal{
+    position: absolute;
+    left:calc(50% - 150px);
+    top:calc(50% - 150px);
+    z-index: 999999999;
+    width:300px;
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    transform:scale(0);
+    -webkit-transition: .2s cubic-bezier(.22,.68,0,1.71);
+    -moz-transition: .2s cubic-bezier(.22,.68,0,1.71);
+    -o-transition: .2s cubic-bezier(.22,.68,0,1.71);
+    transition: .2s cubic-bezier(.22,.68,0,1.71);
+        transition-delay: 3.6s;
+        color: #333;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+#alert{
+    background:#fd6c6e;
+    padding: 15px;
+    color: white;
+      border-radius: 10px 10px 0 0;
+}
+#optin{
+  padding: 15px;
+}
+.optin-button{
+  display: block;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+padding: 10px;
+font-size: 14px;
+text-transform: uppercase;
+}
+
+.optin-button:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.optin-button:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625;
+}
